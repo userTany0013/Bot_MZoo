@@ -1,0 +1,178 @@
+31/08/24 07:44:54 - root - ERROR - division by zero
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 24, in <module>
+    12/0
+    ~~^~
+ZeroDivisionError: division by zero
+31/08/24 07:45:18 - root - ERROR - division by zero
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 24, in <module>
+    12/0
+    ~~^~
+ZeroDivisionError: division by zero
+31/08/24 07:45:29 - root - ERROR - division by zero
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 24, in <module>
+    12/0
+    ~~^~
+ZeroDivisionError: division by zero
+31/08/24 08:47:26 - root - ERROR - division by zero
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 27, in <module>
+    12/0
+    ~~^~
+ZeroDivisionError: division by zero
+31/08/24 08:55:02 - root - ERROR - Bot token is not defined
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 440, in <module>
+    bot.polling(none_stop=True)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1175, in polling
+    logger.info('Starting your bot with username: [@%s]', self.user.username)
+                                                          ^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 294, in user
+    self._user = self.get_me()
+                 ^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1362, in get_me
+    apihelper.get_me(self.token)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\apihelper.py", line 202, in get_me
+    return _make_request(token, method_url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\apihelper.py", line 81, in _make_request
+    raise Exception('Bot token is not defined')
+Exception: Bot token is not defined
+31/08/24 10:11:03 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: unsupported parse_mode
+31/08/24 10:11:03 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1215, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 8623, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 64, in zoo_test
+    bot.send_message(message.chat.id, text_share, f"\n{chat_link}")
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1755, in send_message
+    apihelper.send_message(
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: unsupported parse_mode
+
+31/08/24 10:13:17 - root - ERROR - name 'text_share' is not defined
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 446, in <module>
+    bot.polling(none_stop=True)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1178, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1253, in __threaded_polling
+    raise e
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1215, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 8623, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 64, in zoo_test
+    bot.send_message(message.chat.id, f"\n{chat_link}", text_share)
+                                                        ^^^^^^^^^^
+NameError: name 'text_share' is not defined. Did you mean: 'item_share'?
+31/08/24 10:14:27 - root - ERROR - name 'text_share' is not defined
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 446, in <module>
+    bot.polling(none_stop=True)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1178, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1253, in __threaded_polling
+    raise e
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1215, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 8623, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 64, in zoo_test
+    bot.send_message(message.chat.id, f"\n{chat_link}", text_share.format(message.from_user))
+                                                        ^^^^^^^^^^
+NameError: name 'text_share' is not defined. Did you mean: 'item_share'?
+31/08/24 11:25:03 - root - ERROR - name 'text_Hi' is not defined
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 453, in <module>
+    bot.polling(none_stop=True)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1178, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1253, in __threaded_polling
+    raise e
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1215, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 8623, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 60, in zoo_test
+    bot.send_message(message.chat.id, text_Hi.format(message.from_user), reply_markup=markup)
+                                      ^^^^^^^
+NameError: name 'text_Hi' is not defined
+31/08/24 11:29:40 - root - ERROR - name 'text_Hi' is not defined
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 452, in <module>
+    bot.polling(none_stop=True)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1178, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1253, in __threaded_polling
+    raise e
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1215, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 8623, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 59, in zoo_test
+    bot.send_message(message.chat.id, text_Hi.format(message.from_user), reply_markup=markup)
+                                      ^^^^^^^
+NameError: name 'text_Hi' is not defined
+31/08/24 11:29:57 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message text is empty
+31/08/24 11:29:57 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1215, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 8623, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\Bot.py", line 67, in zoo_test
+    bot.send_message(970891330, text=name_animal)
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\__init__.py", line 1755, in send_message
+    apihelper.send_message(
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coda-\pyton3\projects\MZbot\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message text is empty
+
